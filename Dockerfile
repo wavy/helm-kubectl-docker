@@ -1,11 +1,10 @@
 FROM alpine:3.9
 
-MAINTAINER Sergii Nuzhdin <ipaq.lw@gmail.com>
+MAINTAINER Aram Peres <aram.peres@wavy.fm>
 
 ARG K8S_VERSION
 ARG HELM_VERSION
 ENV HELM_FILENAME=helm-${HELM_VERSION}-linux-amd64.tar.gz
-
 
 RUN apk add --update ca-certificates \
  && apk add --update -t deps curl  \
